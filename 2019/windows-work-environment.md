@@ -2,6 +2,8 @@
 
 ## 文档说明
 - 文档名称：Windows 工作环境部署
+- 文档作者：Ztj
+- 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-21
 - 更新日期：2019-09-06
 - 文档状态：定版
@@ -10,7 +12,7 @@
 - 下载地址 http://msdn.itellyou.cn/
 - 安装 windows 10 enterprise ltsc 2019
 - 推荐的计算机名称：windows, pc, job
-- 以下配置均需要在 PowerShell 管理员模式下执行
+- 以下命令需要在 PowerShell 管理员模式下执行
 
 ## 激活系统
 ```
@@ -24,13 +26,6 @@ slmgr -dlv
 ```
 # 允许执行远程脚本
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
-
-# 启用 Windows-Subsystem-Linux
-$FeatureName = 'Microsoft-Windows-Subsystem-Linux'
-Enable-WindowsOptionalFeature -Online -FeatureName $FeatureName
-
-# 启用虚拟平台
-Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform
 ```
 
 ## Scoop
@@ -109,7 +104,6 @@ aria2c https://raw.githubusercontent.com/ztj1993/files/master/ldap-admin-chinese
 - 管理员执行 Add-Store.cmd
 
 ## 应用商店安装
-- 安装 Ubuntu
 - 安装 Microsoft To-Do
 
 ## 推荐目录结构
