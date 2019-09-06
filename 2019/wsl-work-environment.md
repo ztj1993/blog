@@ -24,16 +24,23 @@ cd $ENV:tmp
 aria2c https://aka.ms/wsl-ubuntu-1804 --out=Ubuntu1804.appx
 Add-AppxPackage .\Ubuntu1804.appx
 
+# 以管理员运行 Ubuntu 并设置用户名和密码
+
 # 其他下方式
 # Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu1804.appx -UseBasicParsing
 ```
 
 ## 配置 Ubuntu 18
 ```
+# 更新系统
+wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-aliyun-mirror.sh
+chmod +x apt-aliyun-mirror.sh
+sudo ./apt-aliyun-mirror.sh
+
 # Ubuntu 初始化
 wget https://raw.githubusercontent.com/ztj1993/shell/master/wsl-ubuntu-init.sh
-chmod +x win-ubuntu-init.sh
-sudo ./win-ubuntu-init.sh
+chmod +x wsl-ubuntu-init.sh
+sudo ./wsl-ubuntu-init.sh
 
 # 允许 root 登录
 wget https://raw.githubusercontent.com/ztj1993/shell/master/ssh-allow-root.sh
