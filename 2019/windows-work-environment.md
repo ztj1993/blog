@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-21
-- 更新日期：2019-09-06
+- 更新日期：2019-09-24
 - 文档状态：定版
 
 ## 基本说明
@@ -84,9 +84,10 @@ scoop install go
 scoop install protobuf
 ```
 
-## choco
+## Choco
 ```
 # 安装环境
+$env:ChocolateyInstall="D:\ChocoApps"
 iwr -useb https://chocolatey.org/install.ps1 | iex
 ```
 
@@ -134,4 +135,19 @@ netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=7379 conne
 netsh interface portproxy del v4tov4 listenport=7379 listenaddress=0.0.0.0
 # 查看端口转发
 netsh interface portproxy show v4tov4
+```
+
+## 软件卸载
+
+### Scoop
+```
+scoop uninstall scoop
+```
+
+### Choco
+```
+Remove-Item -Recurse -Force "$env:ChocolateyBinRoot" -WhatIf
+Remove-Item -Recurse -Force "$env:ChocolateyToolsRoot" -WhatIf
+[System.Environment]::SetEnvironmentVariable("ChocolateyBinRoot", $null, 'User')
+[System.Environment]::SetEnvironmentVariable("ChocolateyToolsLocation", $null, 'User')
 ```
