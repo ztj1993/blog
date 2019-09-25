@@ -89,6 +89,15 @@ scoop install protobuf
 # 安装环境
 $env:ChocolateyInstall="D:\ChocoApps"
 iwr -useb https://chocolatey.org/install.ps1 | iex
+
+# 安装远程控制
+start powershell "choco install teamviewer; pause"
+
+# 安装 VirtualBox
+start powershell "choco install virtualbox; pause"
+
+# 安装 JDK8
+start powershell "choco install jdk8; pause"
 ```
 
 ## 应用配置
