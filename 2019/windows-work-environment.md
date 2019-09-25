@@ -95,6 +95,13 @@ start powershell "choco install virtualbox; pause"
 start powershell "choco install jdk8; pause"
 ```
 
+## 其他软件
+```
+scoop bucket add ztj1993 https://github.com/ztj1993/scoop.git
+scoop install BaiduPCS-Go
+scoop install PicPick
+```
+
 ## 应用配置
 ```
 # 配置 composer 源
