@@ -48,40 +48,35 @@ scoop install curl
 scoop bucket add extras
 
 # 安装常用软件
-scoop install chromium
-scoop install teamviewer
-scoop install jetbrains-toolbox
-scoop install putty
-scoop install postman
-scoop install winscp
-scoop install filezilla
-scoop install sourcetree
-scoop install notepadplusplus
-scoop install ldap-admin
-scoop install beyondcompare
-scoop install switchhosts
+start powershell "scoop install chromium; pause"
+start powershell "scoop install jetbrains-toolbox; pause"
+start powershell "scoop install putty; pause"
+start powershell "scoop install postman; pause"
+start powershell "scoop install winscp; pause"
+start powershell "scoop install filezilla; pause"
+start powershell "scoop install sourcetree; pause"
+start powershell "scoop install notepadplusplus; pause"
+start powershell "scoop install ldap-admin; pause"
+start powershell "scoop install beyondcompare; pause"
+start powershell "scoop install switchhosts; pause"
 
 # 安装系统工具
-scoop install rufus
+start powershell "scoop install rufus; pause"
 
 # 安装 VC++ 运行库
-scoop install vcredist
-
-# 安装 java 环境
-scoop bucket add java
-scoop install oraclejdk
+start powershell "scoop install vcredist; pause"
 
 # 安装 python 环境
-scoop install python
+start powershell "scoop install python; pause"
 
 # 安装 php 环境
-scoop install php
-scoop install composer
-scoop install phpunit
+start powershell "scoop install php; pause"
+start powershell "scoop install composer; pause"
+start powershell "scoop install phpunit; pause"
 
 # 安装 go 环境
-scoop install go
-scoop install protobuf
+start powershell "scoop install go; pause"
+start powershell "scoop install protobuf; pause"
 ```
 
 ## Choco (用于安装系统软件)
