@@ -28,7 +28,7 @@ slmgr -dlv
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 ```
 
-## Scoop
+## Scoop (用于安装便携软件)
 ```
 # 配置 Scoop 目录
 $env:SCOOP='C:\UserScoopApps'
@@ -84,7 +84,7 @@ scoop install go
 scoop install protobuf
 ```
 
-## Choco
+## Choco (用于安装系统软件)
 ```
 # 安装环境
 $env:ChocolateyInstall="D:\ChocoApps"
