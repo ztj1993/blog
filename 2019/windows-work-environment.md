@@ -129,6 +129,7 @@ mkdir History
 mkdir Shared
 mkdir Softwares
 mkdir Temps
+mkdir Virtual
 ```
 
 ## 常用命令
