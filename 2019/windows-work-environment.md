@@ -82,13 +82,13 @@ start powershell "scoop install protobuf; pause"
 ## Choco (用于安装系统软件)
 ```
 # 安装环境
-$env:ChocolateyInstall="D:\ChocoApps"
+$env:ChocolateyInstall="C:\ChocoApps"
 iwr -useb https://chocolatey.org/install.ps1 | iex
 
 # 安装远程控制
 start powershell "choco install teamviewer; pause"
 
-# 安装 VirtualBox
+# 安装 VirtualBox(与 Hyper-V 选其一)
 start powershell "choco install virtualbox; pause"
 
 # 安装 JDK8
