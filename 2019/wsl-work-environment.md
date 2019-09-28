@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-18
-- 更新日期：2019-09-06
+- 更新日期：2019-09-28
 - 文档状态：定版
 
 ## 基础说明
@@ -13,21 +13,33 @@
 - 使用 WSL 1 (注意)
 - 以下命令需要在 PowerShell 管理员模式下执行
 
-## 安装 Ubuntu 18
+## 启用 Windows-Subsystem-Linux
 ```
 # 启用 Windows-Subsystem-Linux
-$FeatureName = 'Microsoft-Windows-Subsystem-Linux'
-Enable-WindowsOptionalFeature -Online -FeatureName $FeatureName
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+```
 
-# 安装 Ubuntu 18
-cd $ENV:tmp
+## 下载 Ubuntu 18
+```
 aria2c https://aka.ms/wsl-ubuntu-1804 --out=Ubuntu1804.appx
-Add-AppxPackage .\Ubuntu1804.appx
-
-# 以管理员运行 Ubuntu 并设置用户名和密码
 
 # 其他下方式
 # Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1804 -OutFile Ubuntu1804.appx -UseBasicParsing
+```
+
+## 安装 Ubuntu 18
+```
+# 自动安装
+Add-AppxPackage .\Ubuntu1804.appx
+
+# 手动安装
+# Expand-Archive .\Ubuntu1804.appx C:\Ubuntu1804
+```
+
+## 第一次启动
+```
+# 管理员模式启动 Ubuntu 18.04
+# 设置用户名和密码
 ```
 
 ## 配置 Ubuntu 18
