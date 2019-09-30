@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-18
-- 更新日期：2019-09-28
+- 更新日期：2019-09-30
 - 文档状态：定版
 
 ## 基础说明
@@ -44,33 +44,29 @@ Add-AppxPackage .\Ubuntu1804.appx
 
 ## 配置 Ubuntu 18
 ```
-# 更新系统
-wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-aliyun-mirror.sh
-chmod +x apt-aliyun-mirror.sh
-sudo ./apt-aliyun-mirror.sh
+# 免密码
+echo "$(whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(whoami)
 
-# Ubuntu 初始化
-wget https://raw.githubusercontent.com/ztj1993/shell/master/wsl-ubuntu-init.sh
-chmod +x wsl-ubuntu-init.sh
-sudo ./wsl-ubuntu-init.sh
+# 替换源
+wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-aliyun-mirror.sh
+chmod +x ./apt-aliyun-mirror.sh && sudo ./apt-aliyun-mirror.sh && rm -rf ./apt-aliyun-mirror.sh
+
+# 更新系统
+DEBIAN_FRONTEND=noninteractive sudo apt-get -y upgrade
 
 # 允许 root 登录
 wget https://raw.githubusercontent.com/ztj1993/shell/master/ssh-allow-root.sh
-chmod +x ssh-allow-root.sh
-sudo ./ssh-allow-root.sh
+chmod +x ./ssh-allow-root.sh && sudo ./ssh-allow-root.sh && rm -rf ./ssh-allow-root.sh
 
 # 本地 ssh 代理(ssh to socks to http)
 wget https://raw.githubusercontent.com/ztj1993/shell/master/ssh-proxy.sh
-chmod +x ssh-proxy.sh
-sudo ./ssh-proxy.sh
+chmod +x ./ssh-proxy.sh && sudo ./ssh-proxy.sh && rm -rf ./ssh-proxy.sh
 
 # Web 开发环境(nginx apache mysql php redis mongodb)
 wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-web-dev.sh
-chmod +x apt-web-dev.sh
-sudo ./apt-web-dev.sh
+chmod +x ./apt-web-dev.sh && sudo ./apt-web-dev.sh && rm -rf ./apt-web-dev.sh
 
 # Python 开发环境
 wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-python.sh
-chmod +x apt-python.sh
-sudo ./apt-python.sh
+chmod +x ./apt-python.sh && sudo ./apt-python.sh && rm -rf ./apt-python.sh
 ```
