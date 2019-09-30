@@ -88,8 +88,11 @@ iwr -useb https://chocolatey.org/install.ps1 | iex
 # 安装远程控制
 start powershell "choco install teamviewer; pause"
 
-# 安装 VirtualBox(与 Hyper-V 选其一)
+# 安装 VirtualBox(不兼容 Hyper-V)
 start powershell "choco install virtualbox; pause"
+
+# 安装 VMware Workstation(不兼容 Hyper-V)
+start powershell "choco install vmwareworkstation; pause"
 
 # 安装 JDK8
 start powershell "choco install jdk8; pause"
