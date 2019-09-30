@@ -9,10 +9,15 @@
 - 文档状态：定版
 
 ## 基本说明
-- 下载地址 http://msdn.itellyou.cn/
 - 安装 windows 10 enterprise ltsc 2019
 - 推荐的计算机名称：windows, pc, job
 - 以下命令需要在 PowerShell 管理员模式下执行
+
+## 下载系统
+- 下载地址 http://msdn.itellyou.cn/
+- Windows 10 Enterprise LTSC 2019 (x64)
+- Office Professional Plus 2016 (x86 and x64)
+- Visio Professional 2016 (x86 and x64)
 
 ## 激活系统
 ```
@@ -103,23 +108,22 @@ start powershell "choco install jdk8; pause"
 scoop bucket add ztj1993 https://github.com/ztj1993/scoop.git
 scoop install BaiduPCS-Go
 scoop install PicPick
+scoop install Microsoft-To-Do
 ```
 
 ## 应用配置
 ```
 # 配置 composer 源
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
+
 # 配置 ldap-admin 简体中文
 aria2c https://raw.githubusercontent.com/ztj1993/files/master/ldap-admin-chinese-utf8-1.6.llf
+
+# Notepad++ 简体中文
+Settings -> Preferences... -> General -> Localization -> 中文简体
+# Notepad++ Tab 转 空格
+设置 -> 首选项... -> 语言 -> 制表符设置 -> 替换为空格(勾选)
 ```
-
-## 安装 Store
-- [下载地址](https://github.com/kkkgo/LTSC-Add-MicrosoftStore)
-- 删除 PurchaseApp & Xbox
-- 管理员执行 Add-Store.cmd
-
-## 应用商店安装
-- 安装 Microsoft To-Do
 
 ## 推荐目录结构
 ```
