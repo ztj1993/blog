@@ -14,12 +14,14 @@
 
 ## 基本配置
 ```
-# 系统更新
+# 替换源
 wget https://raw.githubusercontent.com/ztj1993/shell/master/apt-aliyun-mirror.sh
-chmod +x apt-aliyun-mirror.sh && sudo apt-aliyun-mirror.sh && rm -rf apt-aliyun-mirror.sh
+chmod +x ./apt-aliyun-mirror.sh && sudo ./apt-aliyun-mirror.sh && rm -rf ./apt-aliyun-mirror.sh
+
+# 更新系统
 DEBIAN_FRONTEND=noninteractive sudo apt-get -y upgrade
 
-# Sudo 免密码
+# 免密码
 echo "$(whoami) ALL=(ALL) NOPASSWD:ALL" | sudo tee /etc/sudoers.d/$(whoami)
 
 # 关闭盖子不休眠
