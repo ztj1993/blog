@@ -56,6 +56,8 @@ cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\pkeyconfig-office.xrm-ms
 cscript //nologo "${off16}\OSPP.VBS" /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
 cscript //nologo "${off16}\OSPP.VBS" /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
 cscript //nologo "${off16}\OSPP.VBS" /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT
+
+cscript //nologo "${off16}\OSPP.VBS" /act
 ```
 
 ## 初始配置
