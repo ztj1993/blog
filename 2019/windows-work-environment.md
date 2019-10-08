@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-21
-- 更新日期：2019-09-24
+- 更新日期：2019-10-08
 - 文档状态：定版
 
 ## 基本说明
@@ -13,18 +13,49 @@
 - 推荐的计算机名称：windows, pc, job
 - 以下命令需要在 PowerShell 管理员模式下执行
 
-## 下载系统
+## 下载安装系统
 - 下载地址 http://msdn.itellyou.cn/
 - Windows 10 Enterprise LTSC 2019 (x64)
 - Office Professional Plus 2016 (x86 and x64)
 - Visio Professional 2016 (x86 and x64)
+- Project Professional 2016 (x86 and x64)
 
 ## 激活系统
 ```
-slmgr -ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
-slmgr -skms kms.03k.org
-slmgr -ato
-slmgr -dlv
+$sys32="${env:windir}\system32"
+$lic16="${env:ProgramFiles(x86)}\Microsoft Office\root\Licenses16"
+$off16="${env:ProgramFiles(x86)}\Microsoft Office\Office16"
+
+# 激活系统
+cscript //nologo "${sys32}/slmgr.vbs" /ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
+cscript //nologo "${sys32}/slmgr.vbs" /skms kms.03k.org
+cscript //nologo "${sys32}/slmgr.vbs" /ato
+cscript //nologo "${sys32}/slmgr.vbs" /dlv
+
+# 激活 Office 2016
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ul-oob.xrm-ms"
+
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ul.xrm-ms"
+
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul.xrm-ms"
+
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-bridge-office.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root-bridge-test.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-stil.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul-oob.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\pkeyconfig-office.xrm-ms
+
+cscript //nologo "${off16}\OSPP.VBS" /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+cscript //nologo "${off16}\OSPP.VBS" /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
+cscript //nologo "${off16}\OSPP.VBS" /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT
 ```
 
 ## 初始配置
