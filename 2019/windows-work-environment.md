@@ -132,6 +132,9 @@ start powershell "choco install virtualbox; pause"
 # 安装 VMware Workstation(不兼容 Hyper-V)
 start powershell "choco install vmwareworkstation; pause"
 
+# 安装 Docker Toolbox
+start powershell "choco install docker-toolbox; pause"
+
 # 安装 JDK8
 start powershell "choco install jdk8; pause"
 ```
