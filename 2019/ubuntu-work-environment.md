@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-09-30
-- 更新日期：2019-09-30
+- 更新日期：2019-10-29
 - 文档状态：定版
 
 ## 基本说明
@@ -34,4 +34,11 @@ sudo apt-get install -y curl wget git vim htop terminator
 sudo apt-get install -y network-manager-l2tp-gnome
 sudo service xl2tpd stop
 sudo update-rc.d xl2tpd disable
+```
+
+## 远程控制
+```
+wget https://download.teamviewer.com/download/linux/teamviewer_amd64.deb
+sudo dpkg -i teamviewer_amd64.deb
+sudo apt-get -f install
 ```
