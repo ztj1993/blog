@@ -45,13 +45,13 @@ cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ppd.x
 cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul-oob.xrm-ms"
 cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul.xrm-ms"
 
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-bridge-office.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root-bridge-test.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-stil.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul-oob.xrm-ms
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\pkeyconfig-office.xrm-ms
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-bridge-office.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root-bridge-test.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-stil.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\pkeyconfig-office.xrm-ms"
 
 cscript //nologo "${off16}\OSPP.VBS" /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
 cscript //nologo "${off16}\OSPP.VBS" /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
