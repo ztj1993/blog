@@ -11,3 +11,8 @@
 ## Chrome 扩展
 - [代理设置切换工具](https://github.com/FelisCatus/SwitchyOmega)
 - [GitHub Markdown 打印工具](https://github.com/jerry1100/github-markdown-printer)
+
+## 安卓软件
+- [远程控制软件](https://www.teamviewer.cn/cn/download/android/)
+- [设备信息查看](http://zhushou.360.cn/detail/index/soft_id/204958)
+
