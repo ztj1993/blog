@@ -87,6 +87,7 @@ scoop bucket add extras
 
 # 安装常用软件
 scoop install chromium
+scoop install bandizip
 scoop install jetbrains-toolbox
 scoop install putty
 scoop install postman
@@ -113,6 +114,9 @@ iwr -useb https://chocolatey.org/install.ps1 | iex
 
 # 安装远程控制
 choco install -y teamviewer
+
+# 安装 TortoiseGit
+choco install -y TortoiseGit
 
 # 安装 VirtualBox(不兼容 Hyper-V)
 choco install -y virtualbox
