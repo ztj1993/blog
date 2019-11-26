@@ -22,9 +22,9 @@
 
 ## 激活系统
 ```
-$sys32="${env:windir}\system32"
-$lic16="${env:ProgramFiles(x86)}\Microsoft Office\root\Licenses16"
-$off16="${env:ProgramFiles(x86)}\Microsoft Office\Office16"
+$sys32="${env:windir}/system32"
+$lic16="${env:ProgramFiles(x86)}/Microsoft Office/root/Licenses16"
+$off16="${env:ProgramFiles(x86)}/Microsoft Office/Office16"
 
 # 激活系统
 cscript //nologo "${sys32}/slmgr.vbs" /ipk M7XTQ-FN8P6-TTKYV-9D4CC-J462D
@@ -33,31 +33,31 @@ cscript //nologo "${sys32}/slmgr.vbs" /ato
 cscript //nologo "${sys32}/slmgr.vbs" /dlv
 
 # 激活 Office 2016
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ppd.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ul.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProPlusVL_KMS_Client-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProPlusVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProPlusVL_KMS_Client-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProPlusVL_KMS_Client-ul-oob.xrm-ms"
 
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ppd.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ul-oob.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\ProjectProVL_KMS_Client-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProjectProVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProjectProVL_KMS_Client-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/ProjectProVL_KMS_Client-ul.xrm-ms"
 
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ppd.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul-oob.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\VisioProVL_KMS_Client-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/VisioProVL_KMS_Client-ppd.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/VisioProVL_KMS_Client-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/VisioProVL_KMS_Client-ul.xrm-ms"
 
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-bridge-office.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-root-bridge-test.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-stil.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\client-issuance-ul-oob.xrm-ms"
-cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}\pkeyconfig-office.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-bridge-office.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-root.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-root-bridge-test.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-stil.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-ul.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/client-issuance-ul-oob.xrm-ms"
+cscript //nologo "${sys32}/slmgr.vbs" /ilc "${lic16}/pkeyconfig-office.xrm-ms"
 
-cscript //nologo "${off16}\OSPP.VBS" /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
-cscript //nologo "${off16}\OSPP.VBS" /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
-cscript //nologo "${off16}\OSPP.VBS" /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT
+cscript //nologo "${off16}/OSPP.VBS" /inpkey:XQNVK-8JYDB-WJ9W3-YJ8YR-WFG99
+cscript //nologo "${off16}/OSPP.VBS" /inpkey:PD3PC-RHNGV-FXJ29-8JK7D-RJRJK
+cscript //nologo "${off16}/OSPP.VBS" /inpkey:YG9NW-3K39V-2T3HJ-93F3Q-G83KT
 
-cscript //nologo "${off16}\OSPP.VBS" /act
+cscript //nologo "${off16}/OSPP.VBS" /act
 ```
 
 ## 初始配置
