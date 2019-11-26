@@ -86,35 +86,23 @@ scoop install curl
 scoop bucket add extras
 
 # 安装常用软件
-start powershell "scoop install chromium; pause"
-start powershell "scoop install jetbrains-toolbox; pause"
-start powershell "scoop install putty; pause"
-start powershell "scoop install postman; pause"
-start powershell "scoop install winscp; pause"
-start powershell "scoop install filezilla; pause"
-start powershell "scoop install sourcetree; pause"
-start powershell "scoop install notepadplusplus; pause"
-start powershell "scoop install ldap-admin; pause"
-start powershell "scoop install beyondcompare; pause"
-start powershell "scoop install switchhosts; pause"
+scoop install chromium
+scoop install jetbrains-toolbox
+scoop install putty
+scoop install postman
+scoop install winscp
+scoop install filezilla
+scoop install sourcetree
+scoop install notepadplusplus
+scoop install ldap-admin
+scoop install beyondcompare
+scoop install switchhosts
 
 # 安装系统工具
-start powershell "scoop install rufus; pause"
+scoop install rufus
 
 # 安装 VC++ 运行库
-start powershell "scoop install vcredist; pause"
-
-# 安装 python 环境
-start powershell "scoop install python; pause"
-
-# 安装 php 环境
-start powershell "scoop install php; pause"
-start powershell "scoop install composer; pause"
-start powershell "scoop install phpunit; pause"
-
-# 安装 go 环境
-start powershell "scoop install go; pause"
-start powershell "scoop install protobuf; pause"
+scoop install vcredist
 ```
 
 ## Choco (用于安装系统软件)
@@ -124,19 +112,19 @@ $env:ChocolateyInstall="C:\ChocoApps"
 iwr -useb https://chocolatey.org/install.ps1 | iex
 
 # 安装远程控制
-start powershell "choco install -y teamviewer; pause"
+choco install -y teamviewer
 
 # 安装 VirtualBox(不兼容 Hyper-V)
-start powershell "choco install -y virtualbox; pause"
+choco install -y virtualbox
 
 # 安装 VMware Workstation(不兼容 Hyper-V)
-start powershell "choco install -y vmwareworkstation; pause"
+choco install -y vmwareworkstation
 
 # 安装 Docker Toolbox
-start powershell "choco install -y docker-toolbox; pause"
+choco install -y docker-toolbox
 
 # 安装 JDK8
-start powershell "choco install -y jdk8; pause"
+choco install -y jdk8
 ```
 
 ## 其他软件
@@ -145,6 +133,21 @@ scoop bucket add ztj1993 https://github.com/ztj1993/scoop.git
 scoop install BaiduPCS-Go
 scoop install PicPick
 scoop install Microsoft-To-Do
+```
+
+## 环境安装
+```
+# 安装 python 环境
+scoop install python
+
+# 安装 php 环境
+scoop install php
+scoop install composer
+scoop install phpunit
+
+# 安装 go 环境
+scoop install go
+scoop install protobuf
 ```
 
 ## 应用配置
