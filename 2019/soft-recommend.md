@@ -16,3 +16,9 @@
 - [远程控制软件](https://www.teamviewer.cn/cn/download/android/)
 - [设备信息查看](http://zhushou.360.cn/detail/index/soft_id/204958)
 
+
+## 数据管理
+- [MySQL 数据库管理工具 - SQLyog](https://www.webyog.com/product/sqlyog)
+
+## 编程开发
+- [通用集成开发环境 - JetBrains](https://www.jetbrains.com/toolbox-app/)
