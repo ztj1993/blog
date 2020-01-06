@@ -134,14 +134,6 @@ choco install -y docker-toolbox
 choco install -y jdk8
 ```
 
-## 其他软件
-```
-scoop bucket add ztj1993 https://github.com/ztj1993/scoop.git
-scoop install BaiduPCS-Go
-scoop install PicPick
-scoop install Microsoft-To-Do
-```
-
 ## 环境安装
 ```
 # 网站环境
