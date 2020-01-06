@@ -90,6 +90,8 @@ scoop install chromium
 scoop install bandizip
 scoop install notepadplusplus
 scoop install beyondcompare
+scoop install pdf-xchange-editor
+scoop install pdfsam
 
 # 安装系统工具
 scoop install rufus
