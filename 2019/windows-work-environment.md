@@ -88,22 +88,23 @@ scoop bucket add extras
 # 安装常用软件
 scoop install chromium
 scoop install bandizip
-scoop install jetbrains-toolbox
-scoop install putty
-scoop install postman
-scoop install winscp
-scoop install filezilla
-scoop install sourcetree
 scoop install notepadplusplus
-scoop install ldap-admin
 scoop install beyondcompare
-scoop install switchhosts
 
 # 安装系统工具
 scoop install rufus
 
 # 安装 VC++ 运行库
 scoop install vcredist
+
+# 开发编程
+scoop install jetbrains-toolbox
+scoop install putty
+scoop install postman
+scoop install winscp
+scoop install filezilla
+scoop install sourcetree
+scoop install switchhosts
 ```
 
 ## Choco (用于安装系统软件)
@@ -141,6 +142,14 @@ scoop install Microsoft-To-Do
 
 ## 环境安装
 ```
+# 网站环境
+scoop install nginx
+scoop install apache
+
+# 数据库环境
+scoop install mysql
+scoop install mongodb
+
 # 安装 python 环境
 scoop install python
 
@@ -158,9 +167,6 @@ scoop install protobuf
 ```
 # 配置 composer 源
 composer config -g repo.packagist composer https://mirrors.aliyun.com/composer/
-
-# 配置 ldap-admin 简体中文
-aria2c https://raw.githubusercontent.com/ztj1993/files/master/ldap-admin-chinese-utf8-1.6.llf
 
 # Notepad++ 简体中文
 Settings -> Preferences... -> General -> Localization -> 中文简体
