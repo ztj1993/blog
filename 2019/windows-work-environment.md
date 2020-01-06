@@ -97,7 +97,13 @@ scoop install pdfsam
 scoop install rufus
 
 # 安装 VC++ 运行库
-scoop install vcredist
+scoop install vcredist2005
+scoop install vcredist2008
+scoop install vcredist2010
+scoop install vcredist2012
+scoop install vcredist2013
+scoop install vcredist2015
+scoop install vcredist2017
 
 # 开发编程
 scoop install jetbrains-toolbox
