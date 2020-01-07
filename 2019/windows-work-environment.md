@@ -69,7 +69,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 ## Scoop (用于安装便携软件)
 ```
 # 配置 Scoop 目录
-$env:SCOOP='C:\scoop'
+$env:SCOOP='D:\scoop'
 [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
 
 # 安装 Scoop
@@ -118,7 +118,7 @@ scoop install switchhosts
 ## Choco (用于安装系统软件)
 ```
 # 安装环境
-$env:ChocolateyInstall="C:\choco"
+$env:ChocolateyInstall="D:\choco"
 iwr -useb https://chocolatey.org/install.ps1 | iex
 
 # 安装 JDK8
