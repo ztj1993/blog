@@ -5,7 +5,7 @@
 - 文档作者：Ztj
 - 作者邮箱：ztj1993#gmail.com
 - 创建日期：2019-06-21
-- 更新日期：2019-10-08
+- 更新日期：2020-01-07
 - 文档状态：定版
 
 ## 基本说明
@@ -69,7 +69,7 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Force
 ## Scoop (用于安装便携软件)
 ```
 # 配置 Scoop 目录
-$env:SCOOP='C:\UserScoopApps'
+$env:SCOOP='C:\scoop'
 [Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')
 
 # 安装 Scoop
@@ -85,6 +85,15 @@ scoop install curl
 # 添加 extras
 scoop bucket add extras
 
+# 安装 VC++ 运行库
+scoop install vcredist2005
+scoop install vcredist2008
+scoop install vcredist2010
+scoop install vcredist2012
+scoop install vcredist2013
+scoop install vcredist2015
+scoop install vcredist2017
+
 # 安装常用软件
 scoop install chromium
 scoop install bandizip
@@ -95,15 +104,6 @@ scoop install pdfsam
 
 # 安装系统工具
 scoop install rufus
-
-# 安装 VC++ 运行库
-scoop install vcredist2005
-scoop install vcredist2008
-scoop install vcredist2010
-scoop install vcredist2012
-scoop install vcredist2013
-scoop install vcredist2015
-scoop install vcredist2017
 
 # 开发编程
 scoop install jetbrains-toolbox
@@ -118,8 +118,11 @@ scoop install switchhosts
 ## Choco (用于安装系统软件)
 ```
 # 安装环境
-$env:ChocolateyInstall="C:\ChocoApps"
+$env:ChocolateyInstall="C:\choco"
 iwr -useb https://chocolatey.org/install.ps1 | iex
+
+# 安装 JDK8
+choco install -y jdk8
 
 # 安装远程控制
 choco install -y teamviewer
@@ -135,9 +138,6 @@ choco install -y vmwareworkstation
 
 # 安装 Docker Toolbox
 choco install -y docker-toolbox
-
-# 安装 JDK8
-choco install -y jdk8
 ```
 
 ## 环境安装
@@ -205,15 +205,23 @@ netsh interface portproxy del v4tov4 listenport=7379 listenaddress=0.0.0.0
 netsh interface portproxy show v4tov4
 ```
 
-## 软件卸载
+## 软件命令
 
 ### Scoop
 ```
-scoop uninstall scoop
+# 更新
+scoop update <app>
+
+# 重置
+scoop reset <app>
+
+# 卸载
+scoop uninstall <app>
 ```
 
 ### Choco
 ```
+# 卸载
 Remove-Item -Recurse -Force "$env:ChocolateyBinRoot" -WhatIf
 Remove-Item -Recurse -Force "$env:ChocolateyToolsRoot" -WhatIf
 [System.Environment]::SetEnvironmentVariable("ChocolateyBinRoot", $null, 'User')
