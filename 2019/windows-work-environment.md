@@ -75,7 +75,7 @@ $env:SCOOP='D:\scoop'
 # 安装 Scoop
 iwr -useb get.scoop.sh | iex
 
-# 安装工具
+# 必须工具
 scoop install sudo
 scoop install aria2
 scoop install git
