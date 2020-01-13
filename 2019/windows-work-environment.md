@@ -176,15 +176,15 @@ Settings -> Preferences... -> General -> Localization -> 中文简体
 
 ## 推荐目录结构
 ```
-mkdir Backups
-mkdir Codes
+mkdir Backup
+mkdir Code
 mkdir Data
 mkdir Documents
-mkdir Games
+mkdir Game
 mkdir History
-mkdir Shared
-mkdir Softwares
-mkdir Temps
+mkdir Share
+mkdir Software
+mkdir Temp
 mkdir Virtual
 ```
 
