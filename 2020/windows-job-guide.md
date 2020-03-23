@@ -1,6 +1,9 @@
 # Windows 公司工作环境指南
 
 ## 前言
+阅读本文前，可以先阅读：
+[Windows 工作环境部署](../2019/windows-work-environment.md)
+
 昨天，我上传了
 [scoop-index](https://github.com/ztj1993/scoop-index)
 项目，完成了工作环境的固定，可以实现 
